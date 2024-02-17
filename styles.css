@@ -151,11 +151,20 @@ body {
 .choice-btn[data-choice="rock"] {
   grid-area: rock;
 }
+/*FOOTER*/
+
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  padding: 0 2rem;
+  padding: center;
+}
 
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: red;
 }
