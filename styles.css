@@ -125,7 +125,6 @@ body {
 .choice-btn:focus .choice::after {
   opacity: 1;
   box-shadow: 0 0 0 2rem #223351;
-  z-index: 2;
 }
 .choice img {
   transform: scale(1.5);
@@ -151,8 +150,62 @@ body {
 .choice-btn[data-choice="rock"] {
   grid-area: rock;
 }
-/*FOOTER*/
 
+/*RULES Button*/
+
+.rules-btn {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  font-family: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  background: transparent;
+  color: var(--light-text);
+  outline: none;
+  border: 2px solid var(--outline);
+  padding: 0.6rem 2.5rem;
+  text-transform: uppercase;
+  border-radius: 0.6rem;
+  text-transform: inherit;
+  cursor: pointer;
+}
+.rules-btn:focus {
+  border: 2px solid #fff;
+}
+.rules-img {
+  padding: 2rem 4rem;
+}
+
+/*RULES MODAL*/
+.modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background: var(--shadow-med);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.show-modal {
+  opacity: 1;
+  pointer-events: initial;
+}
+.modal__container {
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.modal__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem 2rem 1rem;
+}
+/*FOOTER*/
 .footer {
   position: absolute;
   bottom: 2rem;
